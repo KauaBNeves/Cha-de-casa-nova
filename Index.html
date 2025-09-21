@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para elementos que podem ser adicionados dinamicamente ou para ajustes rápidos */
+        #giftImage {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #paletteImage {
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="full-width-text">
+        <h1>Seja muito bem vindo ao nosso Chá de Casa Nova</h1>
+        
+        <img id="casalImage" src="images/casal.jpg" alt="Foto do Casal">
+
+        <p>Esse site serve para você selecionar seu presente! As imagens são ilustrativas, e você pode comprar presencialmente ou virtualmente na loja que desejar!</p>
+        <p>Ao selecionar o item, ele fica indisponível para outra pessoa na lista, assim não haverá presentes repetidos!</p>
+    </div>
+
+    <div class="container">
+        <h1>Escolha seu Presente</h1>
+        
+        <img id="paletteImage" src="images/paleta.jpg" alt="Paleta de cores">
+
+        <form id="giftForm">
+            <div class="form-group">
+                <label for="guestName">Seu Nome:</label>
+                <input type="text" id="guestName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="giftList">Escolha um Presente:</label>
+                <select id="giftList" required>
+                    </select>
+            </div>
+            
+            <img id="giftImage" src="" alt="Imagem do presente" style="display: none;">
+            
+            <button type="submit">Confirmar Presente</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
